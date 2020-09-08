@@ -1,9 +1,328 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>test</title>
+     
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+     <!-- build:css css/main.css -->
+     
+     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+<link rel="stylesheet" href="css/teststyle.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- endbuild-->
+    <title>Minimax</title>
+    <style type="text/css">
+ 
+    </style>
 </head>
-<body>
-git test
+
+<body style=" background-color: #414141; ">
+ <nav style="" class="navbar navbar-light navbar-expand-sm fixed-top shadow-lg">
+ <div  style="" class="container-fluid">
+ <a class="navbar-brand d-lg-none " href="#">
+  <img style="background-image:url('css/img/logoback.png'); background-size: contain;" src="css/img/logo.png" height="80" width="80" >
+ </a>
+  <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+
+    <ul class="navbar-nav nav-pills ">
+      <li class="nav-item activee">
+        <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Studio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Classes</a>
+      </li>
+    </ul>
+    
+    
+    <a class="navbar-brand d-none d-lg-block " href="#"><img style="background-image:url('css/img/logoback.png'); background-size: contain;" src="css/img/logo.png" height="80" width="80" >
+                 </a>
+    
+    
+    <ul class="navbar-nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Competions</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Videos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Faculty</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+ <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header shadow text-center">
+       <ul  class="nav nav-tabs ">
+                    <li class="nav-item shadow col-6">
+                      <a class="nav-link active" href="#loginForm"
+                        role="tab" data-toggle="tab"> <span>LOGIN <span class="fa fa-user-circle "> </span></a>
+                    </li>
+                    <li class="nav-item shadow col-6">
+                      <a class="nav-link" href="#registerForm" role="tab"
+                        data-toggle="tab"> <span>REGISTER <span class="fa fa-user-plus "></span> </span> </a>
+                    
+                    </li>
+                    
+                </ul>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="tab-content">
+  <div role="tabpanel" class="tab-pane fade show active" id="loginForm">
+                           
+      <div class="modal-body mt-3 mb-3 shadow mx-3">
+       <form action="">
+        <div class="form-group row mb-5">
+          <div class="col-2 col-sm-1"><i class="fa fa-lg fa-envelope prefix grey-text "></i></div>
+          <div class="col-10 col-sm-11"> <input placeholder="Enter Email Address" type="email" id="orangeForm-name" class="form-control validate"></div>
+          
+        </div>
+        <div class="form-group row mb-5">
+          <div class="col-2 col-sm-1"><i class="fa fa-lg fa-lock prefix grey-text "></i></div>
+          <div class=" col-10 col-sm-11"> <input placeholder="Enter Password" type="password" id="orangeForm-name" class="form-control validate"></div>
+          
+        </div>
+        
+        <div class="md-form mb-4 text-center">
+        <button class="btn shadow petgradient">Login <span class="fa fa-sign-in "></span></button>
+        
+        </div>
+    </form>
+      </div>
+  </div>
+  <div role="tabpanel" class="tab-pane fade " id="registerForm">
+<div class="modal-body mt-3 mb-3 shadow mx-3">
+    <form action="">
+        <div class="form-group row mb-5">
+          <div class="col-2 col-sm-1 "><i class="fa fa-lg fa-user prefix grey-text "></i></div>
+          <div class="col-10 col-sm-11"> <input placeholder="Enter Your Name" type="text" id="orangeForm-name" class="form-control validate"></div>
+          
+        </div>
+        <div class="form-group row mb-5">
+          <div class="col-2 col-sm-1"><i class="fa fa-lg fa-envelope prefix grey-text "></i></div>
+          <div class="col-10 col-sm-11"> <input placeholder="Enter Email Address" type="email" id="orangeForm-name" class="form-control validate"></div>
+          
+        </div>
+        <div class="form-group row mb-5">
+          <div class="col-2 col-sm-1"><i class="fa fa-lg fa-lock prefix grey-text "></i></div>
+          <div class=" col-10 col-sm-11"> <input placeholder="Enter Password" type="password" id="orangeForm-name" class="form-control validate"></div>
+          
+        </div>
+        
+        <div class="md-form mb-4 text-center">
+        <button class="btn petgradient">Register <span class="fa fa-user-plus "></span></button>
+        </div>
+        </form>
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+</div>
+ <header style="background-color:#414141 ;" class="myheader">
+           <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#header-carousel" data-slide-to="1"></li>
+    <li data-target="#header-carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <div class="view">
+        <img class="d-block w-100" src="css/img/header1.jpeg"
+          alt="First slide">
+        <div class="mask rgba-black-light"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Light mask</h3>
+        <p>First text</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="view">
+        <img class="d-block w-100" src="css/img/header2.jpeg"
+          alt="Second slide">
+        <div class="mask rgba-black-strong"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Strong mask</h3>
+        <p>Secondary text</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="view">
+        <img class="d-block w-100" src="css/img/header4.jpg"
+          alt="Third slide">
+        <div class="mask rgba-black-slight"></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">Slight mask</h3>
+        <p>Third text</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#header-carousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#header-carousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+           </header>
+
+    <div class="container">
+      <div class="row row-content shadow">
+        <div class="col"></div>
+      </div>
+      <hr>
+      <div class="row row-content shadow">
+        <div class="col"></div>
+      </div>
+    </div>
+<div><img style="position: relative;bottom: -50px;  background-image:url('css/img/logoback.png'); background-size: contain;" src="css/img/logo.png" height="100" width="100" ></div>
+<footer  class="footer ">
+  
+  <div style="width: 100%; height: 5px;  background-blend-mode: overlay;
+ background-color: #fcc201;
+  background-image: url('css/img/m12.png'); background-size: 100px;
+  background-position: center;
+ margin-bottom: 0px;"></div>
+  <div style="margin-top: 0px; 
+ background-image: url('css/img/m10.png'); background-size: 450px;
+  background-position: center;" class=" ">
+    <div  class="container">
+      <div class="row py-4 d-flex align-items-center">
+
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Get connected with us on social networks!</h6>
+        </div>
+  
+        <div  class="col-md-6 col-lg-7 text-center text-md-right">
+          <a class="btn btn-social-icon btn-facebook">
+            <i class="fa fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <a class="btn btn-social-icon btn-twitter">
+            <i class="fa fa-twitter white-text mr-4"> </i>
+          </a>
+          <a class="btn btn-social-icon btn-google">
+            <i class="fa fa-google-plus white-text mr-4"> </i>
+          </a>
+          <a class="btn btn-social-icon btn-linkedin">
+            <i class="fa fa-linkedin white-text mr-4"> </i>
+          </a>
+          <a class="btn btn-social-icon btn-instagram">
+            <i class="fa fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+       
+      </div>
+
+    </div>
+  </div>
+  <div  style="background-color: #ffcc11; background-image: url('css/img/logo.png'); background-size: contain; background-position: center;background-repeat: no-repeat;  background-blend-mode: overlay;border:1px solid #ffcc11; ">
+  <div class="container text-center text-md-left mt-5 footer-content">
+
+    <div style="color: #313131" class="row mt-3 ">
+
+   
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+       <h6 class="text-uppercase font-weight-bold">Minimax - Dance Studio</h6>
+        <hr class="petblue accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+        <p>Here we facilitate the people who either seek to adopt pets or wish to give away their pets for adoption.<br> We also aim to provide shelter to abandoned pets and street animals if reported any.</p>
+
+      </div>
+   
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+   
+        <h6 class="text-uppercase font-weight-bold">Services</h6>
+        <hr class="petblue accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width:100%;">
+        <p>
+          <a  href="#!">Online Live Classes</a>
+        </p>
+        <p>
+          <a  href="#!">Dance Tutorial Videos</a>
+        </p>
+        <p>
+          <a  href="#!">Our Choreography</a>
+        </p>
+        <p>
+          <a  href="#!">Dance Event Updates</a>
+        </p>
+
+      </div>
+
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="petblue accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+        <p>
+          <a  href="#!"> <i class="fa fa-user"></i> Your Account</a>
+        </p>
+        <p>
+          <a  href="#!"> <i class="fa fa-info-circle"></i>Our Studio</a>
+        </p>
+        <p>
+          <a   href="#!"> <i class="fa fa-inr"></i> Competitions</a>
+        </p>
+        <p>
+          <a  href="#!"> <i class="fa fa-question-circle"></i> Live Classes</a>
+        </p>
+
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="petblue accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+        <p>
+          <i class="fa fa-home mr-3"></i> Bhopal, Madhya Pradesh, India</p>
+        <p>
+          <i class="fa fa-envelope mr-3"></i> Minimax@gmail.com</p>
+        <p>
+          <i class="fa fa-phone mr-3"></i> + 91 9876543210</p>
+        <p>
+          <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
+
+      </div>
+
+    </div>
+
+  </div>
+  </div>
+  <div style="background-color: #fdb515;" class="footer-copyright text-center text-black-50 py-3">
+    © 2020 Copyright:
+    <a  href="#"> Minimax.com</a>
+  </div>
+</footer>
+
 </body>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+     <!-- build:js js/main.js -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"> </script>
+
 </html>
