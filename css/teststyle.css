@@ -1,4 +1,87 @@
-
+body
+{
+  background-color: #414141 !important;
+}
+.logo
+{
+  background-image:url('img/logoback.png'); background-size: contain;
+}
+.gold-shadow
+{
+  box-shadow: 0 4px 8px 0 gold, 0 4px 15px 0 gold;
+}
+.gold-shadow-hover:hover
+{
+-webkit-box-shadow: 0px 0px 10px 1px rgba(252,194,1,0.75);
+-moz-box-shadow: 0px 0px 10px 1px rgba(252,194,1,0.75);
+box-shadow: 0px 0px 10px 1px rgba(252,194,1,0.75);
+}
+.video-gallery img
+{
+transition: 0.3s;
+}
+.video-gallery i
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+ opacity: 0;
+transition: 0.3s;
+}
+.video-gallery:hover img
+{
+-webkit-filter:blur(1px);
+}
+.video-gallery:hover i
+{
+color: #fcc201;
+font-size: 50px !important;
+opacity: 1;
+} 
+.footer-upper
+{
+  background-image: url('dance/13.png') ;
+  background-size: 400px;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+.footer-upper img
+{
+position: relative;bottom: -50px;  background-image:url('img/logoback.png'); background-size: contain;
+}
+.footer-divider
+{
+  width: 100%; height: 5px;  background-blend-mode: overlay;
+ background-color: #fcc201;
+  background-image: url('img/m12.png'); background-size: 100px;
+  background-position: center;
+ margin-bottom: 0px;
+}
+.footer-head
+{
+  margin-top: 0px; 
+ background-image: url('img/m10.png'); background-size: 450px;
+  background-position: center;
+}
+.footer-body
+{
+  background-color: #ffcc11; background-image: url('img/logo.png'); background-size: contain; background-position: center;background-repeat: no-repeat;  background-blend-mode: overlay;border:1px solid #ffcc11;
+}
+.dance-girl
+{
+  opacity: 0;
+  transition: 0.5s;
+}
+.video-fluid
+{
+ height: 500px;
+ width: 100%;
+}
+.dance-girl:hover
+{
+opacity: 1;
+}
 .row-header {
   margin: 0px auto;
   padding: 0px 0px; }
@@ -54,12 +137,12 @@ margin: none;
    top:125px; 
   padding-left: 8%;
 }
+}
 .footer
 {
-  background:  url(img/foot-left.png) left bottom no-repeat , url(img/foot-right.png) right bottom no-repeat; 
 color: white;
 }
-}
+
 address {
   font-size: 80%;
   margin: 0px;
@@ -212,6 +295,7 @@ border-radius: 0px;
   margin-right: 20px;  
   padding:0px 20px !important;  
 transition: 0.4s !important;  
+border-radius: 100px;
 }
 .nav-pills .activee
 {
@@ -235,7 +319,19 @@ border-radius: 100px;
 }  
 .navbar-toggler {
   border-color: #414141 !important;
+}
+.shadow
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 } 
+.carousel-indicators li
+{
+background-color: #fcc201 !important;
+}
+.carousel-control-prev-icon 
+{
+  color: #fcc201 !important;
+}
 .modal .nav-tabs
 {
   background-color: transparent;
