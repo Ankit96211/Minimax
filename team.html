@@ -8,8 +8,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
      <!-- build:css css/main.css -->
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     
      <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 <link rel="stylesheet" href="css/teststyle.css">
@@ -21,11 +20,11 @@
     </style>
 </head>
 
-<body style="  ">
+<body style=" background-color: #414141; ">
  <nav style="" class="navbar navbar-light navbar-expand-sm fixed-top shadow-lg">
  <div  style="" class="container-fluid">
  <a class="navbar-brand d-lg-none " href="#">
-  <img class="logo"  src="css/img/logo.png" height="80" width="80" >
+  <img style="background-image:url('css/img/logoback.png'); background-size: contain;" src="css/img/logo.png" height="80" width="80" >
  </a>
   <button  class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -34,7 +33,7 @@
 
     <ul class="navbar-nav nav-pills ">
       <li  class="nav-item  shadow">
-        <a class="nav-link " href="./index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item shadow">
         <a class="nav-link" href="#">Studio</a>
@@ -45,7 +44,7 @@
     </ul>
     
     
-    <a class="navbar-brand d-none d-lg-block " href="#"><img class="logo"  src="css/img/logo.png" height="80" width="80" >
+    <a class="navbar-brand d-none d-lg-block " href="#"><img style="background-image:url('css/img/logoback.png'); background-size: contain;" src="css/img/logo.png" height="80" width="80" >
                  </a>
     
     
@@ -53,10 +52,10 @@
       <li class="nav-item shadow">
         <a class="nav-link" href="#">Competions</a>
       </li>
-      <li class="nav-item activee shadow">
+      <li class="nav-item shadow">
         <a class="nav-link" href="#">Videos</a>
       </li>
-      <li class="nav-item shadow">
+      <li class="nav-item activee shadow">
         <a class="nav-link" href="#">Faculty</a>
       </li>
     </ul>
@@ -137,7 +136,7 @@
   </div>
 </div>
 </div>
- <header class="myheader ">
+ <header style="background-color:#414141 ;" class="myheader ">
            <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
@@ -152,8 +151,8 @@
         <div class="mask rgba-black-light"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Minimax - Dance Studio</h3>
-        <p>We Create The Creators</p>
+        <h3 class="h3-responsive">Light mask</h3>
+        <p>First text</p>
       </div>
     </div>
     <div class="carousel-item">
@@ -163,8 +162,8 @@
         <div class="mask rgba-black-strong"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Our Team</h3>
-        <p>We Feel the Dance</p>
+        <h3 class="h3-responsive">Strong mask</h3>
+        <p>Secondary text</p>
       </div>
     </div>
     <div class="carousel-item">
@@ -174,8 +173,8 @@
         <div class="mask rgba-black-slight"></div>
       </div>
       <div class="carousel-caption">
-        <h3 class="h3-responsive">Our Studio</h3>
-        <p>Dance All Around</p>
+        <h3 class="h3-responsive">Slight mask</h3>
+        <p>Third text</p>
       </div>
     </div>
   </div>
@@ -192,310 +191,136 @@
            </header>
 
     <div class="container">
-      <div class="row row-content shadow">
-        <div class="col">  
-          <div  id="featured-carousel" class="carousel slide carousel-fade gold-shadow" data-ride="carousel"> 
-           <ol  class="carousel-indicators">
-    <li  data-target="#featured-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#featured-carousel" data-slide-to="1"></li>
-    <li data-target="#featured-carousel" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <video class="video-fluid" autoplay loop muted>
-        <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div class="carousel-item">
-      <video class="video-fluid" autoplay loop muted>
-        <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div class="carousel-item">
-      <video class="video-fluid" autoplay loop muted>
-        <source src="https://mdbootstrap.com/img/video/Agua-natural.mp4" type="video/mp4" />
-      </video>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#featured-carousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#featured-carousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-           </div>
+       <div class="row row-content shadow">
+        <div class="col">
+      <section class="team-section text-center my-5">
+  <div class="row">
+
+    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+      <div class="member-box">
+      <img class="img-fluid member-image" src="css/dance/1.png" >
+      <div class="member-card">
+      <div class="member mx-auto">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
       </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Anna Williams</h5>
+      <p class="text-uppercase"><strong>Graphic designer</strong></p>
+      <p class="">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+        adipisci sed quia non numquam modi tempora eius.</p>
+      <ul class="list-unstyled mb-0">
+        
+        <a class="p-2 fa-lg ">
+          <i class="fa fa-facebook-f "> </i>
+        </a>
+        
+        <a class="p-2 fa-lg tw-ic">
+          <i class="fa fa-twitter "> </i>
+        </a>
+        
+        <a class="p-2 fa-lg ">
+          <i class="fa fa-instagram "> </i>
+        </a>
+      </ul>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+      <div class="member mx-auto">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(3).jpg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">John Doe</h5>
+      <p class="text-uppercase "><strong>Web developer</strong></p>
+      <p class="grey-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem ipsa accusantium
+        doloremque rem laudantium totam aperiam.</p>
+      <ul class="list-unstyled mb-0">
+        
+        <a class="p-2 fa-lg ">
+          <i class="fa fa-facebook-f "> </i>
+        </a>
+        
+        <a class="p-2 fa-lg ">
+          <i class="fa fa-instagram "> </i>
+        </a>
+      </ul>
+    </div>
+    
+
+    
+    <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+      <div class="avatar mx-auto">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(30).jpg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Maria Smith</h5>
+      <p class="text-uppercase "><strong>Photographer</strong></p>
+      <p class="grey-text">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim est fugiat nulla id eu laborum.</p>
+      <ul class="list-unstyled mb-0">
+        
+        <a class="p-2 fa-lg ">
+          <i class="fa fa-facebook-f "> </i>
+        </a>
+        
+        <a class="p-2 fa-lg ">
+          <i class="fa fa-instagram "> </i>
+        </a>
+        
+        <a class="p-2 fa-lg ">
+          <i class="fa fa-dribbble "> </i>
+        </a>
+      </ul>
+    </div>
+    
+
+    
+    <div class="col-lg-3 col-md-6">
+      <div class="avatar mx-auto">
+        <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg" class="rounded-circle z-depth-1"
+          alt="Sample avatar">
+      </div>
+      <h5 class="font-weight-bold mt-4 mb-3">Tom Adams</h5>
+      <p class="text-uppercase "><strong>Backend developer</strong></p>
+      <p class="grey-text">Perspiciatis repellendus ad odit consequuntur, eveniet earum nisi qui consectetur
+        totam officia voluptates perferendis voluptatibus aut.</p>
+      <ul class="list-unstyled mb-0">
+        
+        <a class="p-2 fa-lg ">
+          <i class="fa fa-facebook-f "> </i>
+        </a>
+        
+        <a class="p-2 fa-lg ">
+          <i class="fa fa-github "> </i>
+        </a>
+      </ul>
+    </div>
+    
+
+  </div>
+</section>
+</div>
+    </div>
       <hr>
       <div class="row row-content shadow">
-        <div class="col">
-<div class="row">
-  <div class="col-lg-4 col-md-12 mb-4  gold-shadow-hover">
-    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-
-          
-        <div class="modal-content">
-
-            
-          <div class="modal-body mb-0 p-0">
-
-            <div class="embed-responsive embed-responsive-16by9 z-depth-1 py-3-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"
-                allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-            
-          <div class="modal-footer justify-content-center">
-          
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-
-          </div>
-
-        </div>
-         
-
+        <div class="col"></div>
       </div>
     </div>
-   
-
-    <a class="video-gallery"><img class="img-fluid z-depth-1 py-3 " src="css/img/header2.jpeg" alt="video"
-        data-toggle="modal" data-target="#modal1">
-<i class="fa fa-play-circle"></i>
-      </a>
-
-  </div>
-    
-
-    
-  <div class="col-lg-4 col-md-6 mb-4 gold-shadow-hover">
-
-   
-    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-
-          
-        <div class="modal-content">
-
-            
-          <div class="modal-body mb-0 p-0">
-
-            <div class="embed-responsive embed-responsive-16by9 z-depth-1 py-3-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
-                allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-            
-          <div class="modal-footer justify-content-center">
-           
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-
-          </div>
-
-        </div>
-         
-
-      </div>
-    </div>
-   
-
-    <a class="video-gallery"><img class="img-fluid z-depth-1 py-3" src="css/img/header2.jpeg" alt="video"
-        data-toggle="modal" data-target="#modal6">
-<i class="fa fa-play-circle"></i>
-      </a>
-
-  </div>
-    
-
-    
-  <div class="col-lg-4 col-md-6 mb-4 gold-shadow-hover">
-
-   
-    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-
-          
-        <div class="modal-content">
-
-            
-          <div class="modal-body mb-0 p-0">
-
-            <div class="embed-responsive embed-responsive-16by9 z-depth-1 py-3-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
-                allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-            
-          <div class="modal-footer justify-content-center">
-           
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-
-          </div>
-
-        </div>
-         
-
-      </div>
-    </div>
-   
-
-    <a class="video-gallery"><img  class="img-fluid z-depth-1 py-3" src="css/img/header2.jpeg" alt="video"
-        data-toggle="modal" data-target="#modal4">
-      <i class="fa fa-play-circle"></i></a>
-
-  </div>
-    
-
-</div>
-
- 
-<div class="row">
-
-    
-  <div class="col-lg-4 col-md-12 mb-4 gold-shadow-hover">
-
-   
-    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-
-          
-        <div class="modal-content">
-
-            
-          <div class="modal-body mb-0 p-0">
-
-            <div class="embed-responsive embed-responsive-16by9 z-depth-1 py-3-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GUEZCxBcM78"
-                allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-            
-          <div class="modal-footer justify-content-center">
-           
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-
-          </div>
-
-        </div>
-         
-
-      </div>
-    </div>
-   
-
-    <a class="video-gallery"><img class="img-fluid z-depth-1 py-3" src="css/img/header2.jpeg" alt="video"
-        data-toggle="modal" data-target="#modal2">
-<i class="fa fa-play-circle"></i>
-      </a>
-
-  </div>
-    
-
-    
-  <div class="col-lg-4 col-md-6 mb-4 gold-shadow-hover">
-
-   
-    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-
-          
-        <div class="modal-content">
-
-            
-          <div class="modal-body mb-0 p-0">
-
-            <div class="embed-responsive embed-responsive-16by9 z-depth-1 py-3-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PjGkVCAo8Fw"
-                allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-            
-          <div class="modal-footer justify-content-center">
-           
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-
-          </div>
-
-        </div>
-         
-
-      </div>
-    </div>
-   
-
-    <a class="video-gallery"><img class="img-fluid z-depth-1 py-3" src="css/img/header2.jpeg" alt="video"
-        data-toggle="modal" data-target="#modal5">
-<i class="fa fa-play-circle"></i>
-      </a>
-
-  </div>
-    
-
-    
-  <div class="col-lg-4 col-md-6 mb-4 gold-shadow-hover">
-
-   
-    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-
-          
-        <div class="modal-content">
-
-            
-          <div class="modal-body mb-0 p-0">
-
-            <div class="embed-responsive embed-responsive-16by9 z-depth-1 py-3-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gsNY7TV4r1M"
-                allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-            
-          <div class="modal-footer d-block d-md-flex justify-content-center">
-           
-            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
-
-          </div>
-
-        </div>
-         
-
-      </div>
-    </div>
-   
-
-    <a class="video-gallery"><img class="img-fluid z-depth-1 py-3" src="css/img/header2.jpeg" alt="video"
-        data-toggle="modal" data-target="#modal3">
-<i class="fa fa-play-circle"></i>
-      </a>
-
-  </div>
-    
-
-</div>
- 
-        </div>
-      </div>
-    </div>
-    
-<div class="footer-upper"><img src="css/img/logo.png" height="100" width="100" ></div>
-<footer class="footer ">
+<div style="background-image: url('css/dance/13.png') ;
+  background-size: 400px;
+  background-repeat: repeat-x;
+  background-position: bottom;"><img style="position: relative;bottom: -50px;  background-image:url('css/img/logoback.png'); background-size: contain;" src="css/img/logo.png" height="100" width="100" ></div>
+<footer  class="footer ">
   
-  <div class="footer-divider"></div>
-  <div style="" class="footer-head ">
+  <div style="width: 100%; height: 5px;  background-blend-mode: overlay;
+ background-color: #fcc201;
+  background-image: url('css/img/m12.png'); background-size: 100px;
+  background-position: center;
+ margin-bottom: 0px;"></div>
+  <div style="margin-top: 0px; 
+ background-image: url('css/img/m10.png'); background-size: 450px;
+  background-position: center;" class=" ">
     <div  class="container">
       <div class="row py-4 d-flex align-items-center">
 
@@ -526,7 +351,7 @@
 
     </div>
   </div>
-  <div  class="footer-body">
+  <div  style="background-color: #ffcc11; background-image: url('css/img/logo.png'); background-size: contain; background-position: center;background-repeat: no-repeat;  background-blend-mode: overlay;border:1px solid #ffcc11; ">
   <div class="container text-center text-md-left mt-5 footer-content">
 
     <div style="color: #313131" class="row mt-3 ">
@@ -535,10 +360,8 @@
       <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
 
        <h6 class="text-uppercase font-weight-bold">Minimax - Dance Studio</h6>
-        <hr class="minimaxdark accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
-       <p>We create the <b>CREATORS</b>.<br>
-Be a Dancer or a Choregrapher. 
-        </p>
+        <hr class="petblue accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+        <p>Here we facilitate the people who either seek to adopt pets or wish to give away their pets for adoption.<br> We also aim to provide shelter to abandoned pets and street animals if reported any.</p>
 
       </div>
    
@@ -546,7 +369,7 @@ Be a Dancer or a Choregrapher.
 
    
         <h6 class="text-uppercase font-weight-bold">Services</h6>
-        <hr class="minimaxdark accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width:100%;">
+        <hr class="petblue accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width:100%;">
         <p>
           <a  href="#!">Online Live Classes</a>
         </p>
@@ -565,12 +388,12 @@ Be a Dancer or a Choregrapher.
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
         <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-        <hr class="minimaxdark accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+        <hr class="petblue accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
         <p>
           <a  href="#!"> <i class="fa fa-user"></i> Your Account</a>
         </p>
         <p>
-          <a  href="#!"> <i class="fa fa-info-circle"></i> Our Studio</a>
+          <a  href="#!"> <i class="fa fa-info-circle"></i>Our Studio</a>
         </p>
         <p>
           <a   href="#!"> <i class="fa fa-inr"></i> Competitions</a>
@@ -582,7 +405,7 @@ Be a Dancer or a Choregrapher.
       </div>
       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
         <h6 class="text-uppercase font-weight-bold">Contact</h6>
-        <hr class="minimaxdark accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+        <hr class="petblue accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
         <p>
           <i class="fa fa-home mr-3"></i> Bhopal, Madhya Pradesh, India</p>
         <p>
@@ -612,4 +435,5 @@ Be a Dancer or a Choregrapher.
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"> </script>
+
 </html>

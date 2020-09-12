@@ -63,10 +63,34 @@ position: relative;bottom: -50px;  background-image:url('img/logoback.png'); bac
   margin-top: 0px; 
  background-image: url('img/m10.png'); background-size: 450px;
   background-position: center;
+  color: white;
 }
 .footer-body
 {
   background-color: #ffcc11; background-image: url('img/logo.png'); background-size: contain; background-position: center;background-repeat: no-repeat;  background-blend-mode: overlay;border:1px solid #ffcc11;
+}
+
+.member-image
+{
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+ opacity: 0;
+
+  transition: 0.3s;
+}
+.member-card
+{
+ transition: 0.3s; 
+}
+.member-box:hover .member-card 
+{
+  opacity: 0;
+}
+.member-box:hover .member-image
+{
+  opacity: 1;
 }
 .dance-girl
 {
@@ -97,73 +121,35 @@ opacity: 1;
   background-color: #313131;
    }
 
-@media(max-width: 479px)
-{
-.myheader {
-   padding:40px 0px;
-  color: floralwhite; }
-.pettagline
-{
- display: none;
-}
-.footer
-{
-  background-image: url('img/pet7.png');
-  background-position:bottom ;
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: white;
-}
-}
-.navbar-brand span
-{
-  font-family: Brush Script MT, Brush Script Std, cursive; 
-  font-size: 30px;
-}
-.nav-container
-{
-margin: none;
-}
-@media(min-width: 480px)
-{
+
 .myheader {
   
    padding:40px 0px;
   color: floralwhite; 
 }
-.pettagline
-{
-  position: absolute;
-   top:125px; 
-  padding-left: 8%;
-}
-}
-.footer
-{
-color: white;
-}
 
 address {
   font-size: 80%;
   margin: 0px;
-  color: #0f0f0f; }
+  color: #0f0f0f; 
+}
 .btn-social-icon
 {
   margin:0px 10px;
 border-radius: 50%;
 background-color: transparent;
-border: none;
+border-radius: 50% !important;
+transition: 0.3s;
 }
 .btn-social-icon:hover 
 {
-background-color: white;
-transform: scale(1.1);
- border-radius: 50%;
+background-color: #fcc201;
+ 
  padding: 5px;
 }
 .btn-social-icon:hover i
 {
-color: #849aff;
+color: #313131;
 }
 
 .nav-tabs
@@ -208,21 +194,24 @@ hr
   background: -webkit-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%);
   background: -ms-linear-gradient(10deg, #8490ff 50%, #62bdfc 100%); 
 }
-.petblue
+.minimaxdark
 {
-background-color: #8490ff;  
+background-color: #414141;  
 }
-.petblue-light
+.minimaxdark-light
 {
-background-color:#849aff; 
+background-color:#849aff;
+
 }
 
 .navbar {
  background-blend-mode: overlay;
+ -webkit-background-blend-mode:overlay;
+ -moz-background-blend-mode:overlay;
+ -ms-background-blend-mode:overlay;
  background-color: #fcc201;
   background-image: url("img/m12.png"); background-size: 450px;
   background-position: center;
-
 }
 
 .tab-content {
